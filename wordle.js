@@ -30,4 +30,21 @@ $(function(){
     $(document).on( 'click', '#SUBMIT', function(){
         console.log('click #SUBMIT')
     });
+
+    // AJAX
+    $.ajax({
+        url: "",
+        method: "POST",
+        data: {
+            
+        },
+        dataType : "json",
+        contentType:"application/json"
+    })
+    .done(function (msg) {
+        alert(msg);
+    })
+    .fail(function (jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
 });
