@@ -32,11 +32,12 @@ $(function(){
     });
 
     // AJAX
+    var answer = $('#answer').val()
     $.ajax({
-        url: "",
+        url: "/k4rdle",
         method: "POST",
         data: {
-            
+            answer: answer
         },
         dataType : "json",
         contentType:"application/json"
