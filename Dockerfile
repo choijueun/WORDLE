@@ -11,14 +11,22 @@ RUN yum -y upgrade
 
 # Install
 RUN yum -y install tar unzip vi vim curl curl-devel git
-RUN yum -y install openssl openssl-devel
-RUN yum -y install gcc gcc-c++ zlib zlib-devel
-RUN yum -y install libffi-devel
 
-# Install python 3.7
-RUN apt install software-properties-common -y
-RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt install python3.7 -y
+# For Python Install
+RUN yum -y install wget
+RUN yum -y install gcc gcc-c++
+RUN yum -y install zlib zlib-devel
+RUN yum -y install libffi-devel
+RUN yum -y install openssl openssl-devel
+
+RUN yum -y install python-devel
+
+# Install Python
+RUN wget https://www.python.org/ftp/python/3.8.9/Python-3.8.9.tgz
+RUN tar xzf Python-3.8.9.tgz
+RUN rm -r Python-3.8.9.tgz
+RUN Python-3.8.9/configure --enable-optimizations
+RUN make altinstall
 
 # Add 3.7 to the available alternatives
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
