@@ -1,4 +1,5 @@
-fastapi==
-typer==
-uvicorn==
-click==
+fastapi==0.45.0
+uvicorn==0.17.6
+click==8.1.2
+typing==3.10.0.0
+typer-cli==0.0.12
