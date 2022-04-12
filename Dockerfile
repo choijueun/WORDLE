@@ -6,8 +6,8 @@ LABEL maintainer="songjueun815@gmail.com"
 LABEL project="K4RDLE"
 
 # Update apt packages
-RUN apt -y update
-RUN apt -y upgrade
+RUN yum -y update
+RUN yum -y upgrade
 
 # Install vim
 RUN apt install vim -y
