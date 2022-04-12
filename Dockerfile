@@ -34,7 +34,7 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 RUN update-alternatives --set python /usr/bin/python3.7
 
 # Install pip
-RUN apt install python3-pip -y
+RUN yum -y install python3-pip
 RUN python -m pip install --upgrade pip
 
 # PORT
