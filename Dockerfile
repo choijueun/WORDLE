@@ -5,7 +5,7 @@ FROM --platform=linux/amd64 centos:7
 LABEL maintainer="songjueun815@gmail.com"
 LABEL project="K4RDLE"
 
-# Update apt packages
+# Update yum packages
 RUN yum -y update
 RUN yum -y upgrade
 
