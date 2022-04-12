@@ -20,13 +20,17 @@ RUN yum -y install libffi-devel
 RUN yum -y install openssl openssl-devel
 
 RUN yum -y install python-devel
+RUN yum -y install mysql-devel
 
 # Install Python
-RUN wget https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tgz
-RUN tar xzf Python-3.10.4.tgz
-RUN rm -r Python-3.10.4.tgz
-RUN Python-3.10.4/configure --enable-optimizations
+RUN wget https://www.python.org/ftp/python/3.8.9/Python-3.8.9.tgz
+RUN tar xzf Python-3.8.9.tgz
+RUN rm -r Python-3.8.9.tgz
+RUN Python-3.8.9/configure --enable-optimizations
 RUN make altinstall
+
+# pip upgrade
+RUN python3.8 -m pip install --upgrade pip
 
 # PORT
 EXPOSE 8008
