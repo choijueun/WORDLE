@@ -10,7 +10,7 @@ RUN yum -y update
 RUN yum -y upgrade
 
 # Install vim
-RUN apt install vim -y
+RUN  yum -y install tar unzip vi vim telnet net-tools curl openssl
 
 # Install python 3.7
 RUN apt install software-properties-common -y
