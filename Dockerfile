@@ -33,8 +33,5 @@ RUN update-alternatives --install /usr/bin/python python /usr/bin/python3.7 1
 # Set python3.7 as the default python
 RUN update-alternatives --set python /usr/bin/python3.7
 
-# Install pip
-RUN python3 -m pip install --upgrade pip
-
 # PORT
 EXPOSE 8008
