@@ -9,8 +9,11 @@ LABEL project="K4RDLE"
 RUN yum -y update
 RUN yum -y upgrade
 
-# Install vim
-RUN  yum -y install tar unzip vi vim telnet net-tools curl openssl
+# Install
+RUN yum -y install tar unzip vi vim curl curl-devel git
+RUN yum -y install openssl openssl-devel
+RUN yum -y install gcc gcc-c++ zlib zlib-devel
+RUN yum -y install libffi-devel
 
 # Install python 3.7
 RUN apt install software-properties-common -y
