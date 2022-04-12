@@ -1,0 +1,3 @@
+pip install fastapi
+pip install typer
+pip install click
