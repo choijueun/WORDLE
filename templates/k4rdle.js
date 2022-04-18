@@ -16,6 +16,12 @@ $(function(){
     $(document).on( 'click', '#SUBMIT', function(){
         console.log('click #SUBMIT')
     });
+
+    // TEST
+    Toast.fire({
+        icon: 'warning',
+        title: '단어 없음!!'
+    });
 });
 
 // KOREAN REGULAR EXPRESSION
@@ -31,3 +37,11 @@ function toggleShift(){
     let vr_shift = $('.vr-shift')
     vr_shift.toggleClass('disabled').toggleClass('inline-block')
 }
+
+// SWEETALERT2
+const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000
+});
