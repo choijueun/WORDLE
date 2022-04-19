@@ -29,10 +29,10 @@ $(function(){
     });
 
     // TEST
-    Toast.fire({
-        icon: 'warning',
-        title: '단어 없음!!'
-    });
+    // Toast.fire({
+    //     icon: 'warning',
+    //     title: '단어 없음!!'
+    // });
 });
 
 // KOREAN REGULAR EXPRESSION
