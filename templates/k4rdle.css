@@ -24,6 +24,7 @@ nav {
 /* PUZZLE */
 #PUZZLE {
     width: fit-content;
+    margin: 10px auto;
 }
 .row { 
     width: fit-content; height: fit-content;
