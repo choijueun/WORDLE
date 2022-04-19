@@ -49,8 +49,12 @@ nav {
     background-color: #ccc;
 }
 /* VIRTUAL BUTTONS */
-.vr-word        { width: 20px;  }
+.vr-word        { width: 20px; }
 .vr-btn         { width: 50px; }
+@media screen and (max-width: 767px) {
+    .vr-word        { width: 12px; }
+    .vr-btn         { width: 28px; }
+}
 
 /* ANSWER */
 .sucs           { color: yellowgreen }
