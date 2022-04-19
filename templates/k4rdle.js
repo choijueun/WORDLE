@@ -2,6 +2,17 @@ $(function(){
     // DRAG UNABLE
     $(document).on('contextmenu dragstart selectstart keydown', function(e){ return false; })
 
+    // PUZZLE BLOCK
+    var puzzle_html = '';
+    for(i=0; i<5; i++){
+        puzzle_html += '<div class="row">'
+        for(j=0; j<4; j++){
+            puzzle_html += '<div class="block-word text-center round"></div>'
+        }
+        puzzle_html += '</div>'
+    }
+    $('#PUZZLE').html(puzzle_html);
+
     // SHIFT
     $(document).on( 'click', '#SHIFT', function(){ 
         toggleShift(); 
