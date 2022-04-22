@@ -10,6 +10,9 @@ function App() {
                     how to play
                 </nav>
             </header>
+            <section id="PUZZLE" className="item-center">
+                {/* PUZZLE INSERT BLOCK */}
+            </section>
         </div>
     );
 }
