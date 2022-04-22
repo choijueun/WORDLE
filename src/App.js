@@ -5,7 +5,9 @@ function App() {
     return (
         <div className="App">
             <header className="text-center">
-                <span className="word-success">K</span><span className="word-warning">4</span>RDLE
+                <h1>
+                    <span className="word-success">K</span><span className="word-warning">4</span>RDLE
+                </h1>
                 <nav className="text-center">
                     how to play
                 </nav>
