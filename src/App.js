@@ -1,6 +1,7 @@
-import logo from './logo.svg';
 import Puzzle from './components/views/Puzzle/Puzzle'
 import Navbar from './components/views/Navbar/Navbar'
+import Keyboard from './components/views/Keyboard/Keyboard';
+
 import './App.css';
 
 function App() {
@@ -15,6 +16,9 @@ function App() {
                 <Puzzle/>
                 <Puzzle/>
                 <Puzzle/>
+            </section>
+            <section id="VR-KEYBOARD" className="item-center">
+                <Keyboard/>
             </section>
         </div>
     );
