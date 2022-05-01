@@ -1,14 +1,14 @@
 import React from 'react'
+import './Puzzle.css'
 
 function Puzzle() {
   return (
-    <>
-        <div className="Puzzle">사</div>
-        <div className="Puzzle">자</div>
-        <div className="Puzzle">성</div>
-        <div className="Puzzle">어</div>
-        <hr/>
-    </>
+    <div class="row">
+        <div className="Puzzle block-word text-center round">사</div>
+        <div className="Puzzle block-word text-center round">자</div>
+        <div className="Puzzle block-word text-center round">성</div>
+        <div className="Puzzle block-word text-center round">어</div>
+    </div>
   )
 }
 
