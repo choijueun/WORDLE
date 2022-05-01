@@ -1,4 +1,5 @@
 import React from 'react'
+import './Navbar.css'
 
 function Navbar() {
   return (
@@ -7,7 +8,6 @@ function Navbar() {
             <span className="word-success">K</span><span className="word-warning">4</span>RDLE
         </h1>
         <div className="nav">how to play?</div>
-        <hr/>
     </>
   )
 }

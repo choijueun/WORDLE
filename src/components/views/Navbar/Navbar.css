@@ -1,0 +1,9 @@
+header {
+    width: fit-content;
+    border-bottom: 2px solid #dedede;
+    margin: 10px auto; 
+    padding: 10px auto; 
+}
+nav {
+    margin-bottom: 1em;
+}
