@@ -12,6 +12,12 @@
   border-radius: .3em;
 }
 
+/* TAGS */
+#WORDLE {
+  width: fit-content;
+  cursor: default;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
