@@ -17,9 +17,7 @@ function App() {
                 <Puzzle/>
                 <Puzzle/>
             </section>
-            <section id="VR-KEYBOARD" className="item-center">
-                <Keyboard/>
-            </section>
+            <Keyboard/>
         </div>
     );
 }
