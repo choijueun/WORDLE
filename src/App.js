@@ -7,9 +7,7 @@ import './App.css';
 function App() {
     return (
         <div className="App">
-            <header className="text-center">
-                <Navbar/>
-            </header>
+            <Navbar/>
             <section id="PUZZLE" className="item-center">
                 <Puzzle/>
                 <Puzzle/>
