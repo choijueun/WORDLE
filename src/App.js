@@ -9,7 +9,13 @@ function App() {
         <div className="App">
             <Navbar/>
             <hr/>
-            <Puzzle/>
+            <section id="PUZZLE" className="item-center">
+                <Puzzle/>
+                <Puzzle/>
+                <Puzzle/>
+                <Puzzle/>
+                <Puzzle/>
+            </section>
             <Keyboard/>
         </div>
     );
