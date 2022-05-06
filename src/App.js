@@ -8,13 +8,7 @@ function App() {
     return (
         <div className="App">
             <Navbar/>
-            <section id="PUZZLE" className="item-center">
-                <Puzzle/>
-                <Puzzle/>
-                <Puzzle/>
-                <Puzzle/>
-                <Puzzle/>
-            </section>
+            <Puzzle/>
             <Keyboard/>
         </div>
     );
