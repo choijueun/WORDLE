@@ -5,7 +5,7 @@ function Navbar() {
     return (
         <header className="text-center">
             <h1>
-                <span className="word-success">K</span><span className="word-warning">4</span>RDLE
+                <span className="sucs">K</span><span className="warn">4</span>RDLE
             </h1>
             <div className="nav">how to play?</div>
         </header>

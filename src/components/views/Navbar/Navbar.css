@@ -6,3 +6,9 @@ header {
 .nav {
     margin-bottom: 1em;
 }
+/* ANSWER */
+.sucs           { color: yellowgreen }
+.warn           { color: gold }
+.success        { color: white;     background-color: yellowgreen;      border: 2px solid yellowgreen; }
+.warning        { color: white;     background-color: gold;             border: 2px solid gold; }
+.non-correct    { color: white;     background-color: #ccc;             border: 2px solid #ccc; }

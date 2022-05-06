@@ -11,12 +11,25 @@
 .round { 
   border-radius: .3em;
 }
+.row { 
+  width: fit-content; height: fit-content;
+}
 
 /* TAGS */
 #WORDLE {
   width: fit-content;
   cursor: default;
 }
+
+/* ANSWER */
+.sucs           { color: yellowgreen }
+.warn           { color: gold }
+.success        { color: white;     background-color: yellowgreen;      border: 2px solid yellowgreen; }
+.warning        { color: white;     background-color: gold;             border: 2px solid gold; }
+.non-correct    { color: white;     background-color: #ccc;             border: 2px solid #ccc; }
+
+
+
 
 .App-logo {
   height: 40vmin;
