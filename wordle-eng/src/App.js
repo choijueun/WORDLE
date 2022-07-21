@@ -1,5 +1,5 @@
 import './App.css';
-import Keyboard from './components/Keyboard';
+import Keyboard from './components/keyboard/Keyboard';
 
 function App() {
     return (
