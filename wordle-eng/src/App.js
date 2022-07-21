@@ -1,17 +1,19 @@
 import './App.css';
+import Keyboard from './components/Keyboard';
 
 function App() {
-  return (
+    return (
     <div className="App">
-      {/* 제목 */}
+        {/* 제목 */}
 
-      {/* 네모네모 */}
+        {/* 네모네모 */}
 
-      {/* 키보드 */}
-
-      {/* Modal */}
+        {/* 키보드 */}
+        <Keyboard />
+        {/* Modal */}
+        
     </div>
-  );
+    );
 }
 
 export default App;
