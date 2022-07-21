@@ -14,18 +14,12 @@ function Manual() {
 
     return <>
         <Modal show={isOpen} onHide={onClick}>
-            <Modal.Header closeButton>
-                <Modal.Title>Modal title</Modal.Title>
-            </Modal.Header>
-
             <Modal.Body>
-                <p>BODY</p>
+                <div style={{'textAlign': 'center'}}>
+                    <h5>How To Play</h5>
+                    <p>어쩌구저쩌구~</p>
+                </div>
             </Modal.Body>
-
-            <Modal.Footer>
-                <Button variant="secondary" onClick={onClick}>CLOSE</Button>
-                <Button variant="primary" onClick={onClick}>SUBMIT</Button>
-            </Modal.Footer>
         </Modal>
     </>
 }
