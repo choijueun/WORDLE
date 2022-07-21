@@ -1,5 +1,6 @@
 import './App.css';
 import Keyboard from './components/keyboard/Keyboard';
+import Modals from './components/modals/Modals';
 
 function App() {
     return (
@@ -11,7 +12,7 @@ function App() {
         {/* 키보드 */}
         <Keyboard />
         {/* Modal */}
-        
+        <Modals />
     </div>
     );
 }
