@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 
 import Manual from './Manual'
+import ModalBtn from './ModalBtn'
+
 
 function Modals() {
     // MANUAL
-    const [isManualOpen, setIsManualOpen] = useState(false)
-    function toggleManual(){
-        setIsManualOpen(!isManualOpen)
-    }
+    const manualState = useState(false)
 
     return (
     <>
-        <button onClick={toggleManual}>Manual</button>
-        <Manual isOpen={isManualOpen}/>
+        {/* Manual Modal */}
+        <ModalBtn state={manualState} value={"Open Manual"}/>
+        <Manual state={manualState}/>
     </>
     )
 }
