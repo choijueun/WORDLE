@@ -1,8 +1,11 @@
 import React from 'react'
+import ReactModal from 'react-modal'
 
-function Manual() {
+function Manual({ isOpen }) {
   return (
-    <div>Manual</div>
+    <ReactModal isOpen={isOpen}>
+        <div>MODAL</div>
+    </ReactModal>
   )
 }
 
