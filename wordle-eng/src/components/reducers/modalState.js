@@ -1,9 +1,6 @@
 const MANUAL = 'modalState/MANUAL'
 
-// export const setManualState = data=>({ type: MANUAL, data })
-export const setManualState = (data)=>{
-    return {type:MANUAL, data}
-}
+export const setManualState = data=>({ type: MANUAL, data })
 
 const initialState = {
     manual: false
